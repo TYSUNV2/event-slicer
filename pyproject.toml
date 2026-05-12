@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pebs-event-slicer"
+version = "0.1.0"
+description = "Lightweight predictive event-boundary video slicer."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "imageio-ffmpeg>=0.6.0",
+  "numpy>=1.24",
+  "opencv-python-headless>=4.8",
+]
+
+[project.scripts]
+event-slice = "event_slicer.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["event_slicer*"]
