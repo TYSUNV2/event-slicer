@@ -1,4 +1,4 @@
-# PEBS Event Slicer
+# Predictive Event Boundary Segmentation (PEBS) Event Slicer
 
 Reusable video slicing tool for **event-based segmentation**. The project now contains only the core PEBS pipeline:
 
